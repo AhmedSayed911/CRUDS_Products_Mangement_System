@@ -1,2 +1,3 @@
 # CRUDS_Products_Mangement_System
-This is advanced system to manage products ...
+CRUDS (Create , Read , Update , Delete , Search)<br>
+The Main Language Is <b>JavaScript</b> 
