@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="discription" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cruds | Ahmed Sayed</title>
+    <!-- Main File Css -->
+    <link rel='stylesheet' href="css/style.css" />
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>crud</h1>
+            <p>Product management system</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="product" id="prodect" class="product">
+            <div class="price-box">
+                <input type="number" placeholder="price" id="price" oninput="getTotal()">
+                <input type="number" placeholder="taxes" id="taxes" oninput="getTotal()">
+                <input type="number" placeholder="ads" id="ads" oninput="getTotal()">
+                <input type="number" placeholder="discount" id="discount" oninput="getTotal()">
+                <small id="total"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="creat">create</button>
+        </div>
+        <div class="outputs">
+            <div class="search-box">
+                <input type="search" placeholder="search here" id="search" oninput="searchInMyData(this.value)">
+                <div class="btn-search">
+                    <button id="searchByTitle" onclick="getSearch(this.id)">search by title</button>
+                    <button id="searchByCategory" onclick="getSearch(this.id)">search by category</button>
+                </div>
+            </div>
+            <div id="deleteAll">
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="mobile-show">
+        <h2 style="font-weight: normal;text-align: center;padding: 30px; padding-bottom: 0;">Sorry</h2>
+        <h4 style="font-weight: normal;text-align: center;padding: 30px; color: #ccc;">Can't Open The App On Small Screens (min-width: 696px)</h4>
+        <img src="" alt="">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

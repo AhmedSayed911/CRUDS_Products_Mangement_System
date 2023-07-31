@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color: #31a2e3;
+    --alt-color: rgb(72, 60, 181);
+}
+body {
+    background: #222;
+    color: #fff;
+    font-family: Cairo , system-ui;
+}
+.crud {
+    width: 80%;
+    margin: auto;
+}
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    caret-color: #eee;
+    padding: 4px 4px 4px 20px;
+    transition: 0.4s ease;
+    font-family: monospace;
+    color: #fff;
+}
+.product {
+    width: 100%;
+}
+input:focus {
+    background: #000;
+}
+input::placeholder {
+    color: rgb(128, 128, 128);
+}
+.price-box input {
+    width: 20%;
+}
+#total {
+    background-color: #a00d02;
+    padding: 5px 2px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+#total::before {
+    content: 'Total: ';
+}
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    transition: 0.4s ease;
+    background-color: purple;
+    border-radius: 5px;
+    font-family: Cairo;
+    margin: 20px auto 20px 25%;
+    letter-spacing: 1px;
+    color: #fff;
+}
+button:hover {
+    background-color: rgb(97, 4, 97);
+    color: #fff;
+    letter-spacing: normal;
+}
+.btn-search {
+    display: flex;
+}
+.btn-search button {
+    width: 40%;
+    margin: 20px auto;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th {
+    text-transform: uppercase;
+}
+th , td {
+    padding: 5px;
+}
+.mobile-show {
+    background-color: #444;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+@media (max-width: 696px) {
+    .crud {
+        display: none;
+    }
+    .mobile-show {
+        display: block;
+    }
+}
